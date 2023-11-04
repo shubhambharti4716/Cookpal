@@ -1,0 +1,73 @@
+footer {
+    margin-top: var(--sMargin);
+    padding: var(--sMargin) 10px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+#aboutUsSection{
+    flex: 1;
+    padding: 10px 40px;
+}
+#aboutUsSection>p{
+    margin-top: 30px;
+}
+#usefulLinksSection{
+    flex: 1;
+    margin: 10px 40px;
+    text-align: left;
+    align-self: center;
+}
+#usefulLinksSection>tr>th{
+    font-size: var(--FS_md);
+}
+#usefulLinksSection tr td a{
+    color: var(--primaryTxtClr);
+    font-size: var(--FS_article);
+    text-decoration: none;
+}
+
+#contactUsSection{
+    flex: 1;
+    margin: 10px 40px;
+}
+#contactUsSection div{
+    display: flex;
+    gap: 5px;
+}
+#contactUsSection input{
+    flex-grow: 1;
+    padding: 10px;
+    border-radius: 5px;
+}
+#contactUsSection button{
+    padding: 10px;
+    border: none;
+    color: var(--txtClrLight);
+    background-color: var(--txtClrActive);
+}
+#aboutUsSection>p, #contactUsSection>p{
+text-align: justify;
+font-size: var(--FS_article);
+font-weight: 400;
+margin-bottom: 20px;
+}
+
+#socials{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+#socials>div{
+    width: 40px;
+    height: 40px;
+}
+#socials>div:hover{
+    transform: scale(1.1);
+}
+#socials>div>img{
+    width: 100%;
+    height: 100%;
+}

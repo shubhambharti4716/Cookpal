@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  padding: 0px;
+  margin: 0px;
+  /* outline: 1px solid red; */
+  /* box-sizing: border-box; */
+  /* background-color: var(--testBgClr); */
+}
+
+:root {
+  --testBgClr: rgba(0, 128, 256, 0.2);
+  --primaryBgClr: rgba(256, 256, 256, 1);
+  --secondaryBackgroundColor: #f3f3f3;
+  --footerBgClr: #fbfdfe;
+  --primaryTxtClr: #253d4e;
+  --txtClrActive: #509e2f;
+  --txtClrDanger: #dc582a;
+  --txtClrOrange: #eaaa00;
+  --txtClrInfo: rgb(236, 240, 20);
+  --ClrLemonGreen: #c4d600;
+  --txtClrLight: #fff;
+  /* font sizes */
+  --FS_article: 16px;
+  --FS_md: 20px;
+  --FS_lg: 24px;
+  --FS_xxl: 40px;
+  /* sectional padding */
+  --sMargin: 25px;
+}
+html {
+  font-family: "Poppins", sans-serif;
+  color: var(--primaryTxtClr);
+}
+
+body {
+  position: relative;
+  background: var(--primaryBgClr);
+}
+
+main {
+  width: 94%;
+  margin: auto;
+  padding: 15px 10px;
+}
+
+#mobileDrawer{
+  z-index: 1000;
+  background-color: var(--footerBgClr);
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  display: flex;
+  width: 60vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 25px 10px;
+}
+#mobileDrawer>div:nth-child(2){
+  display: flex;
+  margin: 20px 0px;
+}
+#mobDrawerClose{
+  top: 0px;
+  right: 10px;
+  padding: 5px 8px;
+  position: absolute;
+  text-align: end;
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 700;
+}
+.mobileNavigationOptions{
+  display: flex;
+  flex-direction: column;
+  padding: 10px 20px;
+}
+.mobileNavigationOptions{
+  list-style: none;
+}
+
+#siteBody {
+  display: flex;
+  margin-bottom: var(--sMargin);
+}
+#filterSection {
+  flex: 1;
+}
+
+#filterSection h2 {
+  font-size: var(--FS_lg);
+  font-weight: 600;
+  margin-bottom: var(--sMargin);
+}
+
+#filterSection h4 {
+  margin-bottom: 10px;
+}
+
+#filterSection input {
+  margin-right: 10px;
+  accent-color: var(--txtClrActive);
+}
+.hide{
+  display: none;
+}
+#toggleAll, #toggleVeg, #toggleNonVeg, #toggleLikedRecipes{
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  #siteBody {
+    flex-direction: column;
+  }
+  .hide{
+    display: inline-block !important;
+  }
+  footer {
+    flex-direction: column-reverse;
+  }
+  #recipeCardContainer {
+    justify-content: center;
+  }
+
+  #usefulLinksSection {
+    width: 90%;
+    margin: auto;
+    padding: 10px 40px;
+  }
+  #aboutUsSection > p {
+    margin-top: 0px;
+  }
+  #socials{
+    margin-bottom: var(--sMargin);
+  }
+  header {
+    margin-top: 0px !important;
+  }
+  #headerTxt h3{
+    font-size: 16px;
+
+  }
+  #headerTxt h1{
+    font-size: 28px !important;
+    
+  }
+  #headerTxt h2{
+    font-size: 20px;
+  }
+  .hideNav{
+    display: none !important;
+  }
+  .navOptions{
+    display: none !important;
+  }
+  
+}
